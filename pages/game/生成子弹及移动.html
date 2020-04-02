@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>生成子弹及移动 | 欢迎光临</title>
+    <meta name="description" content="Just playing around">
+    <meta name="generator" content="VuePress 1.3.1">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.2f0340c8.css" as="style"><link rel="preload" href="/assets/js/app.467ca02d.js" as="script"><link rel="preload" href="/assets/js/2.05ab8c5c.js" as="script"><link rel="preload" href="/assets/js/13.daafe59c.js" as="script"><link rel="prefetch" href="/assets/js/10.ee3cc9d8.js"><link rel="prefetch" href="/assets/js/11.4f54d87b.js"><link rel="prefetch" href="/assets/js/12.a810b17c.js"><link rel="prefetch" href="/assets/js/14.f2089fb0.js"><link rel="prefetch" href="/assets/js/15.bd8b6692.js"><link rel="prefetch" href="/assets/js/16.b9d82f05.js"><link rel="prefetch" href="/assets/js/3.aff73c74.js"><link rel="prefetch" href="/assets/js/4.0ade5390.js"><link rel="prefetch" href="/assets/js/5.d1c770c0.js"><link rel="prefetch" href="/assets/js/6.7c6f2915.js"><link rel="prefetch" href="/assets/js/7.b1b63108.js"><link rel="prefetch" href="/assets/js/8.edd96765.js"><link rel="prefetch" href="/assets/js/9.bf2e0974.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2f0340c8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">欢迎光临</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/pages/interview/" class="nav-link">
+  本站介绍
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="游戏介绍" class="dropdown-title"><span class="title">游戏</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/game/介绍.html" class="nav-link">
+  介绍
+</a></li><li class="dropdown-item"><!----> <a href="/pages/game/飞机移动.html" class="nav-link">
+  飞机移动
+</a></li><li class="dropdown-item"><!----> <a href="/pages/game/生成子弹及移动.html" class="nav-link">
+  子弹功能
+</a></li><li class="dropdown-item"><!----> <a href="/pages/game/敌人及道具.html" class="nav-link">
+  敌军及道具
+</a></li><li class="dropdown-item"><!----> <a href="/pages/game/撞击判定.html" class="nav-link">
+  撞击判定
+</a></li><li class="dropdown-item"><!----> <a href="/pages/game/写在最后.html" class="nav-link">
+  写在最后
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/pages/interview/" class="nav-link">
+  本站介绍
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="游戏介绍" class="dropdown-title"><span class="title">游戏</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/game/介绍.html" class="nav-link">
+  介绍
+</a></li><li class="dropdown-item"><!----> <a href="/pages/game/飞机移动.html" class="nav-link">
+  飞机移动
+</a></li><li class="dropdown-item"><!----> <a href="/pages/game/生成子弹及移动.html" class="nav-link">
+  子弹功能
+</a></li><li class="dropdown-item"><!----> <a href="/pages/game/敌人及道具.html" class="nav-link">
+  敌军及道具
+</a></li><li class="dropdown-item"><!----> <a href="/pages/game/撞击判定.html" class="nav-link">
+  撞击判定
+</a></li><li class="dropdown-item"><!----> <a href="/pages/game/写在最后.html" class="nav-link">
+  写在最后
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/pages/interview/" class="sidebar-link">本站介绍</a></li><li><section class="sidebar-group depth-0"><a href="/pages/game/" class="sidebar-heading clickable router-link-active open"><span>打飞机游戏</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/game/介绍.html" class="sidebar-link">介绍</a></li><li><a href="/pages/game/飞机移动.html" class="sidebar-link">飞机移动</a></li><li><a href="/pages/game/生成子弹及移动.html" class="active sidebar-link">子弹功能</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/game/生成子弹及移动.html#生成子弹" class="sidebar-link">生成子弹</a></li><li class="sidebar-sub-header"><a href="/pages/game/生成子弹及移动.html#子弹的移动" class="sidebar-link">子弹的移动</a></li></ul></li><li><a href="/pages/game/敌人及道具.html" class="sidebar-link">敌军及道具</a></li><li><a href="/pages/game/撞击判定.html" class="sidebar-link">撞击判定</a></li><li><a href="/pages/game/写在最后.html" class="sidebar-link">写在最后</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="生成子弹及移动"><a href="#生成子弹及移动" class="header-anchor">#</a> 生成子弹及移动</h1> <h2 id="生成子弹"><a href="#生成子弹" class="header-anchor">#</a> 生成子弹</h2> <p>子弹我们分为两种,一种是普通子弹,也就是垂直向上移动的子弹,另一种是斜向子弹,也就是特殊子弹,在吃到道具时触发<br>
+首先讲解普通子弹,他的发射位置为飞机当前位置,通过动态生成元素的方法添加进他的父级盒子</p> <div class="language-js extra-class"><pre class="language-js"><code> <span class="token comment">// 生成子弹</span>
+    <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> li <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'li'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        li<span class="token punctuation">.</span>style<span class="token punctuation">.</span>left <span class="token operator">=</span> plane<span class="token punctuation">.</span>offsetLeft <span class="token operator">+</span> <span class="token string">'px'</span><span class="token punctuation">;</span>
+        li<span class="token punctuation">.</span>style<span class="token punctuation">.</span>top <span class="token operator">=</span> plane<span class="token punctuation">.</span>offsetTop <span class="token operator">+</span> <span class="token string">'px'</span><span class="token punctuation">;</span>
+        bullet<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>li<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">300</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>而后是特殊子弹的生成,这里需要判断是否发射特殊子弹(触发道具的逻辑之后会讲),当可以生成特殊子弹时,将他们分别放入lil和lir两个盒子<br>
+子弹发射完,strong归0,不再发射</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">if</span> <span class="token punctuation">(</span>strong <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">var</span> lil <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'li'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">var</span> lir <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'li'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            lil<span class="token punctuation">.</span>style<span class="token punctuation">.</span>left <span class="token operator">=</span> plane<span class="token punctuation">.</span>offsetLeft <span class="token operator">+</span> <span class="token string">'px'</span><span class="token punctuation">;</span>
+            lil<span class="token punctuation">.</span>style<span class="token punctuation">.</span>top <span class="token operator">=</span> plane<span class="token punctuation">.</span>offsetTop <span class="token operator">+</span> <span class="token string">'px'</span><span class="token punctuation">;</span>
+            lir<span class="token punctuation">.</span>style<span class="token punctuation">.</span>left <span class="token operator">=</span> plane<span class="token punctuation">.</span>offsetLeft <span class="token operator">+</span> <span class="token string">'px'</span><span class="token punctuation">;</span>
+            lir<span class="token punctuation">.</span>style<span class="token punctuation">.</span>top <span class="token operator">=</span> plane<span class="token punctuation">.</span>offsetTop <span class="token operator">+</span> <span class="token string">'px'</span><span class="token punctuation">;</span>
+            lil<span class="token punctuation">.</span>className <span class="token operator">=</span> <span class="token string">'l'</span><span class="token punctuation">;</span>
+            lir<span class="token punctuation">.</span>className <span class="token operator">=</span> <span class="token string">'r'</span><span class="token punctuation">;</span>
+            bullet<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>lil<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            bullet<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>lir<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>strong <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            bulletnum<span class="token operator">--</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>bulletnum <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            strong <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+</code></pre></div><h2 id="子弹的移动"><a href="#子弹的移动" class="header-anchor">#</a> 子弹的移动</h2> <p>这些子弹生成之后就是子弹的移动了,这里所有的子弹都会进行纵向的移动,只有特殊子弹会进行横向移动</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//子弹纵向移动</span>
+    <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> bullet<span class="token punctuation">.</span>children<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            bullet<span class="token punctuation">.</span>children<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>top <span class="token operator">=</span> bullet<span class="token punctuation">.</span>children<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>offsetTop <span class="token operator">-</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token string">'px'</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>bullet<span class="token punctuation">.</span>children<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>offsetTop <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                bullet<span class="token punctuation">.</span><span class="token function">removeChild</span><span class="token punctuation">(</span>bullet<span class="token punctuation">.</span>children<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 子弹横向移动</span>
+    <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> bulletl <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">'.l'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> bulletr <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">'.r'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> bulletl<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            bulletl<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>left <span class="token operator">=</span> bulletl<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>offsetLeft <span class="token operator">-</span> <span class="token number">4</span> <span class="token operator">+</span> <span class="token string">'px'</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> bulletr<span class="token punctuation">.</span>length<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            bulletr<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>left <span class="token operator">=</span> bulletr<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">.</span>offsetLeft <span class="token operator">+</span> <span class="token number">4</span> <span class="token operator">+</span> <span class="token string">'px'</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/pages/game/飞机移动.html" class="prev">
+        飞机移动
+      </a></span> <span class="next"><a href="/pages/game/敌人及道具.html">
+        敌军及道具
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.467ca02d.js" defer></script><script src="/assets/js/2.05ab8c5c.js" defer></script><script src="/assets/js/13.daafe59c.js" defer></script>
+  </body>
+</html>

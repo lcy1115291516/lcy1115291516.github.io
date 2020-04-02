@@ -1,0 +1,105 @@
+ul {
+    list-style: none;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #31c27c;
+    color: #fafafa;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px;
+}
+
+.main {
+    display: none;
+}
+
+.plane {
+    position: absolute;
+    top: 500px;
+    left: 600px;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    background: url(./images/plane.png) no-repeat;
+    background-size: 50px 50px;
+
+}
+
+.bullet li {
+    position: absolute;
+    width: 8px;
+    height: 20px;
+    transform: translate(-50%, -50%);
+    background: url(./images/bullet.png) no-repeat;
+    background-size: 8px 20px;
+}
+
+.bullet .l {
+    transform: rotate(-30deg);
+}
+
+.bullet .r {
+    transform: rotate(30deg);
+}
+
+.enemy li {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background: url(./images/enemy.png) no-repeat;
+    background-size: 30px 30px;
+}
+
+p {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 60px;
+    right: 100px;
+    background-color: pink;
+    line-height: 50px;
+}
+
+.stronger li {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url(./images/stronger.png) no-repeat;
+    background-size: 30px 30px;
+    transform: translate(-50%, -50%);
+}
+
+.tishi {
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    top: 120px;
+    right: 100px;
+    background-color: skyblue;
+}
+
+.special {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 240px;
+    right: 100px;
+    background-color: gold;
+    line-height: 50px;
+}
